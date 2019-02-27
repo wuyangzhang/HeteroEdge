@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.storm:storm-core:test-jar:tests:2.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/storm/storm-core/2.0.0-SNAPSHOT/storm-core-2.0.0-SNAPSHOT-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/storm/storm-core/2.0.0-SNAPSHOT/storm-core-2.0.0-SNAPSHOT-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/storm/storm-core/2.0.0-SNAPSHOT/storm-core-2.0.0-SNAPSHOT-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

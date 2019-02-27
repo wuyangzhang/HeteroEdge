@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.mockito:mockito-all:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/unknown/mockito-all-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/unknown/mockito-all-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/unknown/mockito-all-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+compile:
+	mvn clean package
+serial:
+	/usr/local/storm/bin/storm jar target/storm-starter-1.1.1.jar storm.topology.SerialReconstructionTopology
+
+parallel:
+	/usr/local/storm/bin/storm jar target/storm-starter-1.1.1.jar storm.topology.ParallelReconstructionTopology
+
+nonPipe:
+	/usr/local/storm/bin/storm jar target/storm-starter-1.1.1.jar storm.topology.NonPipelineTopology
+

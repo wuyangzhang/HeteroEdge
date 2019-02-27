@@ -1,0 +1,111 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+########### These MUST be filled in for a storm configuration
+ storm.zookeeper.servers:
+     - "10.10.21.1"
+     - "10.10.21.2"
+     - "10.10.21.3"
+     - "10.10.21.4"
+     - "10.10.21.5"
+     - "10.10.21.6"
+     - "10.10.21.7"
+
+
+ nimbus.seeds: ["10.10.21.2"]
+
+ storm.zookeeper.port: 2181
+###### These may optionally be filled in:
+
+ worker.heap.memory.mb: 8192
+
+ supervisor.scheduler.meta:
+    tag: 10.10.20.1
+
+ #storm.scheduler: org.apache.storm.scheduler.resource.ResourceAwareScheduler
+ #storm.scheduler: storm.LatencyFirstScheduler
+ supervisor.memory.capacity.mb: 2048
+ supervior.cpu.capacity: 100
+
+ supervisor.slots.ports:
+     - 6700
+     - 6701
+     - 6702
+     - 6703
+     - 6704
+     - 6705
+     - 6706
+     - 6707
+     - 6708
+     - 6709
+     - 6710
+     - 6711
+     - 6712
+     - 6713
+     - 6714
+     - 6715
+     - 6716
+     - 6717
+     - 6718
+     - 6719
+     - 6720
+     - 6721
+     - 6722
+     - 6723
+     - 6724
+     - 6725
+     - 6726
+     - 6727
+     - 6728
+     - 6729
+     - 6730
+     - 6731
+     - 6732
+     - 6733
+     - 6734
+     - 6735
+     - 6736
+     - 6737
+     - 6738
+     - 6739
+     - 6740
+     - 6741    
+     - 6742
+     - 6743 
+     - 6744 
+     - 6745 
+     - 6746 
+     - 6747 
+     - 6748 
+     - 6749 
+     - 6750 
+     - 6751
+     - 6752
+     - 6753
+     - 6754
+     - 6755
+     - 6756
+     - 6757
+     - 6758
+     - 6759
+     - 6760
+     - 6761
+     - 6762
+     - 6763
+     - 6764
+     
+ worker.childopts: "-Xmx1024m -Xms600m -XX:+PrintGCDetails -Xloggc:artifacts/gc.log -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=1M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=artifacts/heapdump"
+

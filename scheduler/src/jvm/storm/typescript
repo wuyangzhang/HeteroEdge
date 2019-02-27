@@ -1,0 +1,66 @@
+Script started on Sun Jul 15 00:46:33 2018
+Executing: program /usr/bin/ssh host node21-5.grid.orbit-lab.org, user (unspecified), command scp -v -t .resource.sh
+OpenSSH_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: Connecting to node21-5.grid.orbit-lab.org [10.10.21.5] port 22.
+debug1: Connection established.
+debug1: permanently_set_uid: 0/0
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_rsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /root/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.4
+debug1: Remote protocol version 2.0, remote software version OpenSSH_7.2p2 Ubuntu-4ubuntu2.4
+debug1: match: OpenSSH_7.2p2 Ubuntu-4ubuntu2.4 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to node21-5.grid.orbit-lab.org:22 as 'root'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256@libssh.org
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:9Lj/DLHhweyAWFCP0rKbS0aE+ahagYYPJjr6HM0GRpo
+debug1: Host 'node21-5.grid.orbit-lab.org' is known and matches the ECDSA host key.
+debug1: Found key in /root/.ssh/known_hosts:16
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS received
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<rsa-sha2-256,rsa-sha2-512>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentication succeeded (none).
+Authenticated to node21-5.grid.orbit-lab.org ([10.10.21.5]:22).
+debug1: channel 0: new [client-session]
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: network
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: Sending environment.
+debug1: Sending command: scp -v -t .resource.sh
+Sending file modes: C0644 1024000000 .resource.sh
+Sink: C0644 1024000000 .resource.sh
+.resource.sh                                                                                                                                          0%    0     0.0KB/s   --:-- ETA.resource.sh                                                                                                                                         20%  203MB 202.9MB/s   00:03 ETA.resource.sh                                                                                                                                         41%  407MB 203.0MB/s   00:02 ETA.resource.sh                                                                                                                                         62%  607MB 202.7MB/s   00:01 ETA.resource.sh                                                                                                                                         83%  813MB 203.1MB/s   00:00 ETA.resource.sh                                                                                                                                        100%  977MB 195.3MB/s   00:05    
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+debug1: fd 0 clearing O_NONBLOCK
+debug1: fd 1 clearing O_NONBLOCK
+Transferred: sent 1025251760, received 181112 bytes, in 4.8 seconds
+Bytes per second: sent 211715369.4, received 37399.8
+debug1: Exit status 0
